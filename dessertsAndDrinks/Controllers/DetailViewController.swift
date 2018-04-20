@@ -19,6 +19,8 @@ class DetailViewController: UIViewController {
     
     weak var detailData : Food!
     
+    var imagesAdded = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +50,14 @@ class DetailViewController: UIViewController {
                     ingredients += "\(key): \(value)\n\r"
                 }
             }
-            
+            self.ingredientsText.text = ingredients
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if !self.imagesAdded {
             self.addImagesInScroll()
+            self.imagesAdded = true
         }
     }
 
@@ -72,7 +80,7 @@ class DetailViewController: UIViewController {
             x += width
         }
         
-        self.imagesScroller.contentSize = CGSize(width: x, height: 1)
+        self.imagesScroller.contentSize = CGSize(width: CGFloat(x), height: self.imagesScroller.frame.size.height)
     }
 
 

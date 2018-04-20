@@ -32,7 +32,7 @@ class Menu {
         var desserts = [Dessert]()
         for dessert in DataSource.desserts {
             let item = Dessert(name: dessert["name"] as! String,
-                               calories: dessert["calories"] as! Double,
+                               calories: Double(dessert["calories"] as! Int),
                                ingredients: dessert["ingredients"] as! [String:String],
                                photos: dessert["photos"] as! [String])
             desserts.append(item)

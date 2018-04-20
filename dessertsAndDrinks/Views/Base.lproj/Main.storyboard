@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Drinks List View Controller-->
         <scene sceneID="m5c-TL-AlI">
             <objects>
-                <viewController id="NXC-WG-Hgw" sceneMemberID="viewController">
+                <viewController id="NXC-WG-Hgw" customClass="DrinksListViewController" customModule="dessertsAndDrinks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vQx-Da-sPB"/>
                         <viewControllerLayoutGuide type="bottom" id="av1-sI-jEx"/>
@@ -36,6 +36,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aKc-Is-GgA"/>
                     <connections>
+                        <outlet property="fullContainer" destination="vix-Kw-8A4" id="wsB-cz-uV7"/>
                         <segue destination="IaM-08-HFe" kind="show" identifier="showDrinkDetail" id="jaE-nO-Aqm"/>
                     </connections>
                 </viewController>
@@ -60,6 +61,7 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-3W-FQk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="P4t-Y4-YU0"/>
                                         </constraints>
@@ -121,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="-147.07646176911544"/>
         </scene>
-        <!--View Controller-->
+        <!--Desserts List View Controller-->
         <scene sceneID="OoQ-5n-lJx">
             <objects>
-                <viewController id="4cg-4T-3kk" sceneMemberID="viewController">
+                <viewController id="4cg-4T-3kk" customClass="DessertsListViewController" customModule="dessertsAndDrinks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XIu-vx-C5I"/>
                         <viewControllerLayoutGuide type="bottom" id="odE-1w-uko"/>
@@ -148,6 +150,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZkB-PE-0FF"/>
                     <connections>
+                        <outlet property="fullContainer" destination="VrN-zf-Q0f" id="zdz-rR-7ei"/>
                         <segue destination="IaM-08-HFe" kind="show" identifier="showDessertDetail" id="Nr4-Qu-SbE"/>
                     </connections>
                 </viewController>

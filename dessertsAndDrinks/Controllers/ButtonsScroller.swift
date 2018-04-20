@@ -76,19 +76,16 @@ class ButtonsScroller: UIView {
                                             multiplier: 1.0,
                                             constant: height)
             constraints.append(top)
-            constraints.append(height)
+            itemButton.addConstraint(height)
             self.scrollerContent.addConstraints(constraints)
             self.scrollerContent.layoutSubviews()
-            itemButton.translatesAutoresizingMaskIntoConstraints = true
             self.buttonsArray.append(itemButton)
 
             y += itemButton.frame.size.height + 8.0
         }
         
-        if let button = self.buttonsArray.last {
-            self.heightScrollerContent.constant = (button.frame.origin.y + button.frame.size.height + 8.0)
-            self.scroller.layoutSubviews()
-        }
+        self.heightScrollerContent.constant = (y + 8.0)
+        self.scroller.layoutSubviews()
     }
 
 }

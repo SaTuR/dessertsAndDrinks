@@ -32,7 +32,7 @@ class ItemButton: UIView {
         
         self.button.addTarget(parent, action: buttonPressed, for: .touchUpInside)
         self.button.tag = itemIndex
-        
+                
         if self.food.photos.count > 0 {
             let imageName = self.food.photos[0]
             self.imageView.image = UIImage(named: imageName)
