@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ItemButton" customModule="dessertsAndDrinks" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -31,7 +31,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="RIt-s3-zPU">
                             <rect key="frame" x="70" y="24.5" width="297" height="22"/>
                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.022494612068965518" green="0.06998922413793103" blue="0.1076778017137931" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -61,6 +61,12 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="74W-2Q-shK" id="Fak-Nc-jvz"/>
+                <outlet property="fullContainer" destination="Z3g-yv-Mf2" id="82i-I7-DWR"/>
+                <outlet property="imageView" destination="Opm-bz-eYq" id="bwm-at-mut"/>
+                <outlet property="nameLabel" destination="RIt-s3-zPU" id="asY-dl-iHe"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="-245"/>
         </view>
     </objects>

@@ -36,12 +36,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="aKc-Is-GgA"/>
                     <connections>
-                        <segue destination="IaM-08-HFe" kind="show" id="jaE-nO-Aqm"/>
+                        <segue destination="IaM-08-HFe" kind="show" identifier="showDrinkDetail" id="jaE-nO-Aqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ko8-Fg-uJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="179.46026986506749"/>
+            <point key="canvasLocation" x="1268" y="257"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="2pU-v5-bkM">
@@ -148,12 +148,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZkB-PE-0FF"/>
                     <connections>
-                        <segue destination="IaM-08-HFe" kind="show" id="Nr4-Qu-SbE"/>
+                        <segue destination="IaM-08-HFe" kind="show" identifier="showDessertDetail" id="Nr4-Qu-SbE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpB-6p-j5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="-475.41229385307349"/>
+            <point key="canvasLocation" x="1268" y="-508"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="g5H-9b-mDT">
@@ -190,7 +190,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcT-v3-y2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.80000000000001" y="-475.41229385307349"/>
+            <point key="canvasLocation" x="329" y="-507"/>
         </scene>
         <!--Drinks-->
         <scene sceneID="eBt-6y-qIg">
@@ -209,7 +209,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPY-pS-Bgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.80000000000001" y="179.46026986506749"/>
+            <point key="canvasLocation" x="329" y="257"/>
         </scene>
     </scenes>
     <resources>
@@ -217,6 +217,6 @@
         <image name="drinks_icon" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nr4-Qu-SbE"/>
+        <segue reference="jaE-nO-Aqm"/>
     </inferredMetricsTieBreakers>
 </document>

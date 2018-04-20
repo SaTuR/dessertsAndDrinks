@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonsScroller" customModule="dessertsAndDrinks" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -23,13 +23,6 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZr-Cp-X7s">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-MR-1Xo">
-                                            <rect key="frame" x="8" y="8" width="359" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="667" id="ITe-CY-p75"/>
@@ -64,6 +57,12 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="fullContainer" destination="MnF-Og-GfT" id="7Nx-kc-Ldq"/>
+                <outlet property="heightScrollerContent" destination="ITe-CY-p75" id="zmn-Zo-pIX"/>
+                <outlet property="scroller" destination="rdY-Jt-JWd" id="Cuw-dO-wvz"/>
+                <outlet property="scrollerContent" destination="hZr-Cp-X7s" id="OsN-K6-OVA"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

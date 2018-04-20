@@ -21,6 +21,8 @@
 		30547E941E6D9B7F001758AF /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30547E931E6D9B7F001758AF /* Drink.swift */; };
 		30547E961E6DA185001758AF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30547E951E6DA185001758AF /* Menu.swift */; };
 		30547E981E6DA30B001758AF /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30547E971E6DA30B001758AF /* DataSource.swift */; };
+		30B603071E816BCF002DE9FB /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B603061E816BCF002DE9FB /* ItemButton.swift */; };
+		30B603091E8177CA002DE9FB /* ButtonsScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B603081E8177CA002DE9FB /* ButtonsScroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		30547E931E6D9B7F001758AF /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		30547E951E6DA185001758AF /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		30547E971E6DA30B001758AF /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		30B603061E816BCF002DE9FB /* ItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
+		30B603081E8177CA002DE9FB /* ButtonsScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsScroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				303B63AF1E7B126500466F9E /* DetailViewController.swift */,
+				30B603061E816BCF002DE9FB /* ItemButton.swift */,
+				30B603081E8177CA002DE9FB /* ButtonsScroller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,11 +197,13 @@
 			files = (
 				30547E981E6DA30B001758AF /* DataSource.swift in Sources */,
 				30547E811E6A1BAE001758AF /* ViewController.swift in Sources */,
+				30B603071E816BCF002DE9FB /* ItemButton.swift in Sources */,
 				30547E921E6A225E001758AF /* Dessert.swift in Sources */,
 				30547E941E6D9B7F001758AF /* Drink.swift in Sources */,
 				30547E7F1E6A1BAE001758AF /* AppDelegate.swift in Sources */,
 				303B63B41E7B152D00466F9E /* Food.swift in Sources */,
 				30547E961E6DA185001758AF /* Menu.swift in Sources */,
+				30B603091E8177CA002DE9FB /* ButtonsScroller.swift in Sources */,
 				303B63B01E7B126500466F9E /* DetailViewController.swift in Sources */,
 				303B63B21E7B141500466F9E /* Enumerations.swift in Sources */,
 			);

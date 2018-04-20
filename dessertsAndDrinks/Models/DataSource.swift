@@ -14,12 +14,12 @@ class DataSource {
         ["name": "Coffee",
          "hotBeverage": true,
          "ingredients": ["water":"1 cup", "coffee":"100gr"],
-         "photos": ["coffee1, coffee2"]
+         "photos": ["coffee1", "coffee2"]
          ],
         ["name": "Vanilla Milkshake",
          "hotBeverage": false,
          "ingredients": ["vanilla ice":"4 cup", "vanilla extract":"2 teaspoons", "sugar":"8 spoons", "milk":"2 cups"],
-         "photos": ["vanillamilk1, vanillamilk2"]
+         "photos": ["vanillamilk1", "vanillamilk2"]
         ]
     ]
     
